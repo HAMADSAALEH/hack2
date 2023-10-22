@@ -32,3 +32,10 @@ double haversine(double lat1, double lon1, double lat2, double lon2)
         scanf("%lf", &lat2);
         printf("Longitude 2 (-180 to 180): ");
         scanf("%lf", &lon2);
+
+ if (lat1 < -90 || lat1 > 90 || lon1 < -180 || lon1 > 180 || lat2 < -90 || lat2 > 90 || lon2 < -180 || lon2 > 180)
+        {
+            printf("Invalid latitude or longitude values. Please ensure they are within the specified ranges.\n");
+            return 1;
+        }
+        
