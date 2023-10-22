@@ -38,4 +38,10 @@ double haversine(double lat1, double lon1, double lat2, double lon2)
             printf("Invalid latitude or longitude values. Please ensure they are within the specified ranges.\n");
             return 1;
         }
+         double distance = haversine(lat1, lon1, lat2, lon2);{
+
+        printf("The distance between the two locations is %.2f kilometers.\n", distance);
         
+        return 0;
+        }
+    }
